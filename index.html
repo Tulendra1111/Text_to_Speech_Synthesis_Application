@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Text to Speech</title>
+    <link rel="icon" href="fav.ico">
+
+    <!-- HTML Meta Tags -->
+    <title>Text to Speech</title>
+    <meta
+      name="description"
+      content="Text-to-speech with AI-Powered natural sounding voices."
+    />
+
+    <!-- Facebook Meta Tags -->
+    <meta
+      property="og:url"
+      content="https://github.com/Amans2002/TexttoSpeech/"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Text to Speech" />
+    <meta
+      property="og:description"
+      content="Text-to-speech with AI-Powered natural sounding voices."
+    />
+    <meta
+      property="og:image"
+      content="https://github.com/Amans2002/TexttoSpeech/assets/images/opengraph.webp"
+    />
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:domain" content="github.com/Amans2002" />
+    <meta
+      property="twitter:url"
+      content="https://github.com/Amans2002/TexttoSpeech/"
+    />
+    <meta name="twitter:title" content="Text to Speech" />
+    <meta
+      name="twitter:description"
+      content="Text-to-speech with AI-Powered natural sounding voices."
+    />
+    <meta
+      name="twitter:image"
+      content="https://github.com/Amans2002/TexttoSpeech/assets/images/opengraph.webp"
+    />
+
+    <!-- Meta Tags Generated via https://www.opengraph.xyz -->
+  </head>
+  <body>
+    <header>
+      <h1>Text to Speech</h1>
+    </header>
+    <main>
+      <div class="speechSection">
+        <div class="Voice-cnt">
+          <h2>Select Voice</h2>
+          <select id="voices"></select>
+        </div>
+        <div class="container">
+          <textarea name="" id="text" cols="50" rows="10"></textarea>
+        </div>
+
+        <div class="container">
+          <div>
+            <p>Volume</p>
+            <input
+              type="range"
+              min="0"
+              max="1"
+              value="1"
+              step="0.1"
+              id="volume"
+            />
+            <span id="label-v" class="">1</span>
+          </div>
+          <div>
+            <p class="lead">Rate</p>
+            <input
+              type="range"
+              min="0.1"
+              max="10"
+              value="1"
+              id="rate"
+              step="0.1"
+            />
+            <span id="label-r" class="">1</span>
+          </div>
+          <div>
+            <p>Pitch</p>
+            <input
+              type="range"
+              min="0"
+              max="2"
+              value="1"
+              step="0.1"
+              id="pitch"
+            />
+            <span id="label-p" class="">1</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="controls">
+        <div class="ctrl">
+          <button id="start">
+            <i class="start-icon"></i>
+          </button>
+          <button id="cancel">
+            <i class="cancel-icon"></i>
+          </button>
+          <button id="resume">
+            <i class="resume-icon"></i>
+          </button>
+          <button id="pause">
+            <i class="pause-icon"></i>
+          </button>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="index.js"></script>
+</html>
